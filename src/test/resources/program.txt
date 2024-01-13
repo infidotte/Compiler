@@ -1,0 +1,4 @@
+int С, В
+let A = 13E++13
+let B = 12EE12 plus 1E++12
+end

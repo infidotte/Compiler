@@ -1,0 +1,24 @@
+(*описания*)
+int a, b
+float c, d:bool e:bool f
+let g=134 min 80085E (*ERROR*)
+:c = (0 min 134E2)
+let z = ~true
+(*операторы*)
+for(a;a LT 3;a plus 1)
+{
+if a EQ 0 then
+{
+c=5;d=10D;output(c plus d)
+} end_else;
+if a EQ 1 then
+{
+c=123.516;
+d=.516E+2;
+output(c GT d)
+} end_else;
+if a EQ 2 then{e=true;f=false;output(e NE f)} end_else
+}
+output(0101100101B EQ 011010100101B):output(123EABAFH EQ 672ABH)
+output(123O EQ 0123O)
+end

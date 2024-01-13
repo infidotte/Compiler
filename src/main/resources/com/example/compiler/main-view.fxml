@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.compiler.MainController">
+    <HBox alignment="CENTER">
+        <VBox alignment="CENTER_LEFT">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+            <TextArea fx:id="programText" editable="false" prefHeight="400.0" prefWidth="300.0"
+                      promptText="(*here will be the program text*)" wrapText="true"/>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets top="10.0"/>
+                </padding>
+                <Button fx:id="input" onAction="#onInputButtonClick" prefWidth="75.0" text="input">
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets left="12.5" right="12.5"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="analyze" mnemonicParsing="false" onAction="#onAnalyzeButtonClick"
+                        prefWidth="75.0" text="analyze">
+                    <HBox.margin>
+                        <Insets left="12.5" right="12.5"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </VBox>
+        <VBox>
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TW">
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+            </Text>
+            <TextArea fx:id="TW" editable="false" prefHeight="400.0" prefWidth="100.0"
+                      promptText="(*here will be a table of keywords*)" wrapText="true"/>
+        </VBox>
+        <VBox layoutX="252.0" layoutY="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TL">
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+            </Text>
+            <TextArea fx:id="TL" editable="false" prefHeight="400.0" prefWidth="100.0"
+                      promptText="(*here will be a table of delimiters*)" wrapText="true"/>
+        </VBox>
+        <VBox layoutX="302.0" layoutY="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TI">
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+            </Text>
+            <TextArea fx:id="TI" editable="false" prefHeight="400.0" prefWidth="100.0"
+                      promptText="(*here will be a table of identifiers*)" wrapText="true"/>
+        </VBox>
+        <VBox layoutX="352.0" layoutY="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TN">
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+            </Text>
+            <TextArea fx:id="TN" editable="false" prefHeight="400.0" prefWidth="100.0"
+                      promptText="(*here will be a table of numbers*)" wrapText="true"/>
+        </VBox>
+    </HBox>
+    <TextArea fx:id="output" editable="false" promptText="(*here will be the program output*)" wrapText="true">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+    </TextArea>
+</VBox>
